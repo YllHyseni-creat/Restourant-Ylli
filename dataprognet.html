@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restourant Ylli</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" >
+    <link rel="stylesheet" href="dataprognet.css">
+    <style>
+
+       x body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background-color: wheat;
+            padding: 1px;
+            color: white;
+            text-align: center;
+            
+           
+        }
+
+        
+        nav {
+            background-color: wheat;
+            padding: 1px;
+        }
+
+       
+        nav ul {
+            list-style-type: none; /* Heq pikat e listës */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Përdorim Flexbox për rreshtimin e elementeve */
+            justify-content: center; /* Qendron elementët në mes */
+           
+        }
+
+        /* Stilizimi i elementëve të listës */
+        nav ul li {
+            margin-right: 20px; /* Hapësirë midis elementeve */
+        }
+
+        /* Lidhjet e navigimit */
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block; /* Mundëson klikimin në të gjithë hapësirën e lidhjes */
+            border: 1px  solid white;
+            border-radius: 5px; /* Rrugëzimi i skajeve të kufirit për një pamje më të butë */
+            background-color: white; /* Sfond i bardhë për secilin element */
+        }
+
+        /* Ndryshimi i ngjyrës kur kalohet mbi lidhjet */
+        nav ul li a:hover {
+            background-color: #FFD700;
+            color: #333;
+        }
+
+        /* Seksionet e faqes */
+        section {
+            padding: 20px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column; /* Pozicionimi vertikal */
+            align-items: flex-start;
+            margin: 20px;
+            background-color: #333;
+        }
+
+        /* Stilizimi për tabelën */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: dimgray;
+
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Stilizimi për listën e dytë */
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .menu-list li {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        
+           
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li class="logo">
+                    <a href="home">
+                        <img src="favicon.jpg" alt="logo" class="logoimg">
+                    </a>
+                </li>
+                <li class="a1"><a href="#rreth-nesh">Rreth Nesh</a></li>
+                <li class="a2"><a href="#menu">Menu</a></li>
+                <li class="a3"><a href="#rezervimet">Rezervimet</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Sekcionet përkatëse të faqes -->
+<section id="rreth-nesh">
+    <h1> Restourant Ylli - Shije dhe Atmosferë e Përsosur</h1>
+    <p>Në<b> Restorantin Ylli</b>, ofrojmë një eksperiencë të paharrueshme të shijes dhe mikpritjes.<br>
+     Me një menu të pasur dhe të larmishme, ne përpiqemi t'ju sjellim më të mirën nga kuzhina tradicionale dhe moderne, duke përdorur përbërës të freskët dhe të cilësisë së lartë.<br>
+     Qëllimi ynë është të krijojmë një ambient të ngrohtë dhe të rehatshëm për të gjithë mysafirët tanë, ku mund të shijoni ushqime të shkëlqyera, të shoqëruara me një shërbim të kujdesshëm dhe të shpejtë.<br>
+     Pavarësisht nëse jeni duke festuar një moment të veçantë apo thjesht duke kërkuar një vend për t'u relaksuar me miqtë dhe familjen, <b>Restoranti Ylli</b> është vendi ideal për çdo rast.</p>
+    
+
+     <img src="download1.jpg"  style="width: 300px;  height:300px;">
+     <img src="OIP2.jpg"   style="width: 300px;  height:300px;">
+     <img src="OIP3.jpg"   style="width: 300px;  height:300px;">
+     <img src="OIP4.jpg"   style="width: 300px;  height:300px;"> 
+     <p><strong> Foto nga restouranti</strong> </p>
+    </section>
+
+    <section id ="menu">
+        <div class="menu-container">
+            
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Kategoria</th>
+                        <th>Emri i Ushqimit</th>
+                        <th>Çmimi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Salatë me perime të freskëta</td>
+                        <td>5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Supë me pule</td>
+                        <td>4 €</td>
+                    </tr>
+                    <tr>
+                        <td>Platet Kryesore</td>
+                        <td>Pastë Carbonara</td>
+                        <td>12 €</td>
+                    </tr>
+                    <tr>
+                        <td>Pjat Kryesore</td>
+                        <td>Pizza Margarita</td>
+                        <td>10€</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Pizza Proshut</td>
+                        <td>7€</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Pizza Pule</td>
+                        <td>7€</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Sendwich Tuna</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Sendwich Proshut</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td>Fillestare</td>
+                        <td>Sendwich Pule</td>
+                        <td>2€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="rezervimet">
+
+        <form action="process_rezervim.php" method="post">
+            <label for="emri">Emri:</label>
+            <input type="text" id="emri" name="emri" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="telefoni">Numri i Telefonit:</label>
+            <input type="tel" id="telefoni" name="telefoni" required><br><br>
+    
+            <label for="data_rezervimit">Data e Rezervimit:</label>
+            <input type="date" id="data_rezervimit" name="data_rezervimit" required><br><br>
+    
+            <label for="koha_rezervimit">Koha e Rezervimit:</label>
+            <input type="time" id="koha_rezervimit" name="koha_rezervimit" required><br><br>
+    
+            <label for="pershkrimi">Përshkrimi (Opsional):</label><br>
+            <textarea id="pershkrimi" name="pershkrimi" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Rezervo">
+        </form>
+    
+    
+    </section>
+    </body>
+</html>
